@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Anima Project
+
+# WTBI Project
 =======
->>>>>>> bc59af6a5724880ee4f1d4b9345e364a52bec4a0
+
 
 
 ## Getting started
