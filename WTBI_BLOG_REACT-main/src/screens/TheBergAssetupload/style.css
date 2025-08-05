@@ -1,0 +1,1392 @@
+.the-berg-assetupload {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.the-berg-assetupload .overlap-wrapper {
+  background-color: #fafafa;
+  height: 4504px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.the-berg-assetupload .overlap {
+  height: 4504px;
+  left: -5px;
+  position: relative;
+  width: 1446px;
+}
+
+.the-berg-assetupload .image-slider {
+  height: 604px;
+  left: 144px;
+  position: absolute;
+  top: 597px;
+  width: 359px;
+}
+
+.the-berg-assetupload .overlap-group {
+  height: 604px;
+  position: relative;
+}
+
+.the-berg-assetupload .group {
+  height: 604px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 359px;
+}
+
+.the-berg-assetupload .div {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 604px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 354px;
+}
+
+.the-berg-assetupload .future-of-customer-s {
+  color: #333333;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 600;
+  left: 38px;
+  letter-spacing: 0;
+  line-height: 36px;
+  position: absolute;
+  top: 435px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .img {
+  border-radius: 16px 16px 0px 0px;
+  height: 403px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 354px;
+}
+
+.the-berg-assetupload .ainara-vergara {
+  color: #333333;
+  font-family: "DM Sans", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  left: 38px;
+  letter-spacing: 0;
+  line-height: 19px;
+  position: absolute;
+  top: 474px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .his-dolorem-habemus {
+  color: #999999;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  height: 61px;
+  left: 38px;
+  letter-spacing: 0;
+  line-height: 24px;
+  overflow: hidden;
+  position: absolute;
+  top: 495px;
+  width: 277px;
+}
+
+.the-berg-assetupload .text-wrapper {
+  font-family: "DM Sans", Helvetica;
+  font-weight: 400;
+}
+
+.the-berg-assetupload .span {
+  color: #fa612f;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+}
+
+.the-berg-assetupload .ellipse-wrapper {
+  height: 204px;
+  left: 75px;
+  position: absolute;
+  top: 113px;
+  width: 204px;
+}
+
+.the-berg-assetupload .ellipse {
+  border-radius: 102px;
+  height: 204px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 204px;
+}
+
+.the-berg-assetupload .group-wrapper {
+  height: 41px;
+  left: 334px;
+  position: absolute;
+  top: 194px;
+  width: 26px;
+}
+
+.the-berg-assetupload .overlap-group-wrapper {
+  height: 41px;
+  transform: rotate(180deg);
+}
+
+.the-berg-assetupload .overlap-group-2 {
+  height: 42px;
+  position: relative;
+  top: -1px;
+  width: 26px;
+}
+
+.the-berg-assetupload .exclusion {
+  height: 42px;
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 22px;
+}
+
+.the-berg-assetupload .chev-down {
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 9px;
+  transform: rotate(90deg);
+  width: 24px;
+}
+
+.the-berg-assetupload .icon {
+  height: 14px;
+  left: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 5px;
+  transform: rotate(-270deg);
+  width: 8px;
+}
+
+.the-berg-assetupload .group-2 {
+  height: 572px;
+  left: 241px;
+  position: absolute;
+  top: 15px;
+  width: 113px;
+}
+
+.the-berg-assetupload .group-3 {
+  height: 36px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 113px;
+}
+
+.the-berg-assetupload .meeting-wrapper {
+  background-color: #00c134;
+  height: 36px;
+  position: relative;
+}
+
+.the-berg-assetupload .meeting {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  height: 24px;
+  left: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+  overflow: hidden;
+  position: absolute;
+  top: 8px;
+  width: 86px;
+}
+
+.the-berg-assetupload .group-4 {
+  height: 18px;
+  left: 27px;
+  position: absolute;
+  top: 554px;
+  width: 67px;
+}
+
+.the-berg-assetupload .vector {
+  height: 18px;
+  left: 26px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 18px;
+}
+
+.the-berg-assetupload .path {
+  height: 17px;
+  left: 54px;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 13px;
+}
+
+.the-berg-assetupload .group-5 {
+  height: 17px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 17px;
+}
+
+.the-berg-assetupload .overlap-group-3 {
+  height: 17px;
+  position: relative;
+}
+
+.the-berg-assetupload .path-2 {
+  height: 14px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  width: 14px;
+}
+
+.the-berg-assetupload .path-3 {
+  height: 5px;
+  left: 11px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 5px;
+}
+
+.the-berg-assetupload .rectangle {
+  height: 268px;
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.the-berg-assetupload .rectangle-2 {
+  background: linear-gradient(
+    180deg,
+    #004e8b 0%,
+    rgba(0, 86, 151, 0.1) 74.46%,
+    rgba(0, 87, 152, 0) 100%
+  );
+  height: 268px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.the-berg-assetupload .header {
+  background-color: transparent;
+  height: 96px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.the-berg-assetupload .search {
+  border: 1px solid;
+  border-color: #ffffff;
+  border-radius: 20px;
+  height: 40px;
+  left: 1088px;
+  position: absolute;
+  top: 28px;
+  width: 40px;
+}
+
+.the-berg-assetupload .vector-wrapper {
+  height: 24px;
+  left: 7px;
+  position: relative;
+  top: 7px;
+  width: 24px;
+}
+
+.the-berg-assetupload .vector-2 {
+  height: 20px;
+  left: 2px;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  width: 20px;
+}
+
+.the-berg-assetupload .menu {
+  height: 25px;
+  left: 894px;
+  position: absolute;
+  top: 39px;
+  width: 163px;
+}
+
+.the-berg-assetupload .destination {
+  color: #ffffff;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: -4px;
+  white-space: nowrap;
+  width: 96px;
+}
+
+.the-berg-assetupload .tours {
+  color: #ffffff;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 114px;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: -4px;
+  white-space: nowrap;
+  width: 49px;
+}
+
+.the-berg-assetupload .content {
+  height: 35px;
+  left: 1150px;
+  position: absolute;
+  top: 33px;
+  width: 248px;
+}
+
+.the-berg-assetupload .button {
+  all: unset;
+  box-sizing: border-box;
+  height: 35px;
+  position: relative;
+}
+
+.the-berg-assetupload .sign-up {
+  color: #ffffff;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  text-align: center;
+  top: 3px;
+  white-space: nowrap;
+  width: 247px;
+}
+
+.the-berg-assetupload .VENTURE {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  left: 112px;
+  letter-spacing: 0;
+  line-height: 33px;
+  position: absolute;
+  top: 25px;
+  white-space: nowrap;
+  width: 379px;
+}
+
+.the-berg-assetupload .group-6 {
+  height: 247px;
+  left: 1095px;
+  position: absolute;
+  top: 134px;
+  width: 260px;
+}
+
+.the-berg-assetupload .group-7 {
+  background-image: url(../../../static/img/group-50-25.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 247px;
+  overflow: hidden;
+}
+
+.the-berg-assetupload .overlap-group-4 {
+  height: 247px;
+  position: relative;
+  width: 260px;
+}
+
+.the-berg-assetupload .group-8 {
+  background-image: url(../../../static/img/group-52-12.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 244px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 257px;
+}
+
+.the-berg-assetupload .group-9 {
+  background-image: url(../../../static/img/group-54-12.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 247px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 260px;
+}
+
+.the-berg-assetupload .footer-menu {
+  background-color: #0c141d;
+  height: 492px;
+  left: 5px;
+  position: absolute;
+  top: 4012px;
+  width: 1440px;
+}
+
+.the-berg-assetupload .footer {
+  background-color: transparent;
+  height: 332px;
+  left: 112px;
+  position: relative;
+  top: 92px;
+  width: 1216px;
+}
+
+.the-berg-assetupload .cel {
+  height: 162px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1216px;
+}
+
+.the-berg-assetupload .logo-text {
+  height: 133px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 235px;
+}
+
+.the-berg-assetupload .VENTURE-2 {
+  color: #ffffff;
+  font-family: "Sora", Helvetica;
+  font-size: 22px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: -4px;
+  width: 235px;
+}
+
+.the-berg-assetupload .feel-and-enjoy-the {
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 77px;
+  width: 200px;
+}
+
+.the-berg-assetupload .content-wrapper {
+  height: 159px;
+  left: 1050px;
+  position: absolute;
+  top: 3px;
+  width: 166px;
+}
+
+.the-berg-assetupload .content-2 {
+  height: 159px;
+  position: relative;
+  width: 168px;
+}
+
+.the-berg-assetupload .supports {
+  color: #ffffff;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: -5px;
+  white-space: nowrap;
+  width: 168px;
+}
+
+.the-berg-assetupload .cel-2 {
+  height: 102px;
+  left: 0;
+  position: absolute;
+  top: 57px;
+  width: 168px;
+}
+
+.the-berg-assetupload .help {
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: -4px;
+  white-space: nowrap;
+  width: 168px;
+}
+
+.the-berg-assetupload .location {
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 34px;
+  white-space: nowrap;
+  width: 168px;
+}
+
+.the-berg-assetupload .employees {
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 74px;
+  white-space: nowrap;
+  width: 168px;
+}
+
+.the-berg-assetupload .cel-3 {
+  height: 52px;
+  left: 0;
+  position: absolute;
+  top: 280px;
+  width: 1218px;
+}
+
+.the-berg-assetupload .frame {
+  height: 27px;
+  left: 0;
+  position: absolute;
+  top: 25px;
+  width: 366px;
+}
+
+.the-berg-assetupload .terms-condditions {
+  -webkit-text-stroke: 1px #707070;
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: -5px;
+  white-space: nowrap;
+  width: 193px;
+}
+
+.the-berg-assetupload .ellipse-2 {
+  background-color: #d9d9d9;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 3px;
+  height: 6px;
+  left: 211px;
+  position: absolute;
+  top: 7px;
+  width: 6px;
+}
+
+.the-berg-assetupload .text-wrapper-2 {
+  -webkit-text-stroke: 1px #707070;
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 237px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: -5px;
+  white-space: nowrap;
+  width: 129px;
+}
+
+.the-berg-assetupload .element-venture-all {
+  -webkit-text-stroke: 1px #707070;
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 909px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 20px;
+  white-space: nowrap;
+  width: 309px;
+}
+
+.the-berg-assetupload .we-craft-digital-wrapper {
+  height: 56px;
+  left: 575px;
+  position: absolute;
+  top: 372px;
+  width: 302px;
+}
+
+.the-berg-assetupload .we-craft-digital {
+  color: #005798;
+  font-family: "Poppins", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 80px;
+  position: absolute;
+  text-align: center;
+  top: -12px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .group-10 {
+  height: 585px;
+  left: 144px;
+  position: absolute;
+  top: 1235px;
+  width: 364px;
+}
+
+.the-berg-assetupload .overlap-2 {
+  height: 585px;
+  position: relative;
+}
+
+.the-berg-assetupload .group-11 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 585px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 354px;
+}
+
+.the-berg-assetupload .group-12 {
+  height: 41px;
+  left: 0;
+  position: absolute;
+  top: 194px;
+  width: 364px;
+}
+
+.the-berg-assetupload .group-13 {
+  height: 41px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 26px;
+}
+
+.the-berg-assetupload .overlap-group-5 {
+  height: 42px;
+  position: relative;
+  top: -1px;
+}
+
+.the-berg-assetupload .exclusion-2 {
+  height: 42px;
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 22px;
+}
+
+.the-berg-assetupload .icon-2 {
+  height: 14px;
+  left: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 5px;
+  transform: rotate(-90deg);
+  width: 8px;
+}
+
+.the-berg-assetupload .group-14 {
+  height: 41px;
+  left: 338px;
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  width: 26px;
+}
+
+.the-berg-assetupload .group-15 {
+  height: 585px;
+  left: 548px;
+  position: absolute;
+  top: 1235px;
+  width: 354px;
+}
+
+.the-berg-assetupload .group-16 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 585px;
+  position: relative;
+}
+
+.the-berg-assetupload .group-17 {
+  height: 585px;
+  left: 942px;
+  position: absolute;
+  top: 1235px;
+  width: 359px;
+}
+
+.the-berg-assetupload .group-18 {
+  height: 585px;
+}
+
+.the-berg-assetupload .overlap-3 {
+  height: 585px;
+  position: relative;
+  width: 359px;
+}
+
+.the-berg-assetupload .rectangle-3 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 585px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 354px;
+}
+
+.the-berg-assetupload .group-19 {
+  height: 41px;
+  left: 334px;
+  position: absolute;
+  top: 181px;
+  width: 26px;
+}
+
+.the-berg-assetupload .group-20 {
+  height: 585px;
+  left: 144px;
+  position: absolute;
+  top: 1873px;
+  width: 354px;
+}
+
+.the-berg-assetupload .group-21 {
+  height: 585px;
+  left: 546px;
+  position: absolute;
+  top: 1873px;
+  width: 359px;
+}
+
+.the-berg-assetupload .group-22 {
+  height: 585px;
+  left: 945px;
+  position: absolute;
+  top: 1873px;
+  width: 359px;
+}
+
+.the-berg-assetupload .group-23 {
+  height: 585px;
+  left: 144px;
+  position: absolute;
+  top: 2510px;
+  width: 359px;
+}
+
+.the-berg-assetupload .group-24 {
+  height: 585px;
+  left: 548px;
+  position: absolute;
+  top: 2510px;
+  width: 354px;
+}
+
+.the-berg-assetupload .group-25 {
+  height: 585px;
+  left: 950px;
+  position: absolute;
+  top: 2510px;
+  width: 354px;
+}
+
+.the-berg-assetupload .group-26 {
+  height: 585px;
+  left: 144px;
+  position: absolute;
+  top: 3148px;
+  width: 354px;
+}
+
+.the-berg-assetupload .group-27 {
+  height: 585px;
+  left: 544px;
+  position: absolute;
+  top: 3148px;
+  width: 354px;
+}
+
+.the-berg-assetupload .group-28 {
+  height: 48px;
+  left: 246px;
+  position: absolute;
+  top: 452px;
+  width: 958px;
+}
+
+.the-berg-assetupload .light-field-default {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #ebf0f4;
+  border-radius: 16px;
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 774px;
+}
+
+.the-berg-assetupload .placeholder {
+  color: #58617b;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .light-button-primary {
+  background-color: #005896;
+  border-radius: 15px;
+  height: 48px;
+  left: 788px;
+  position: absolute;
+  top: 0;
+  width: 170px;
+}
+
+.the-berg-assetupload .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .group-29 {
+  height: 20px;
+  left: 136px;
+  object-fit: cover;
+  position: absolute;
+  top: 15px;
+  width: 20px;
+}
+
+.the-berg-assetupload .group-30 {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #ebf0f4;
+  border-radius: 16px;
+  height: 48px;
+  left: 448px;
+  position: absolute;
+  top: 524px;
+  width: 54px;
+}
+
+.the-berg-assetupload .group-31 {
+  height: 29px;
+  left: 12px;
+  position: relative;
+  top: 9px;
+  width: 29px;
+}
+
+.the-berg-assetupload .overlap-group-6 {
+  height: 29px;
+  position: relative;
+}
+
+.the-berg-assetupload .path-4 {
+  height: 16px;
+  left: 13px;
+  object-fit: cover;
+  position: absolute;
+  top: 13px;
+  width: 16px;
+}
+
+.the-berg-assetupload .path-5 {
+  height: 16px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+.the-berg-assetupload .icon-text-wrapper {
+  background-color: #fa612f;
+  border: 1px solid;
+  border-color: #ebf0f4;
+  border-radius: 16px;
+  height: 49px;
+  left: 520px;
+  position: absolute;
+  top: 524px;
+  width: 182px;
+}
+
+.the-berg-assetupload .icon-text {
+  height: 31px;
+  left: 14px;
+  position: relative;
+  top: 9px;
+  width: 107px;
+}
+
+.the-berg-assetupload .menu-2 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  left: 46px;
+  letter-spacing: 0.16px;
+  line-height: 22px;
+  position: absolute;
+  top: 5px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .group-32 {
+  height: 29px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 29px;
+}
+
+.the-berg-assetupload .light-field-default-2 {
+  background-color: #d8d8d8;
+  border: 1px solid;
+  border-color: #ebf0f4;
+  border-radius: 16px;
+  height: 49px;
+  left: 720px;
+  position: absolute;
+  top: 524px;
+  width: 182px;
+}
+
+.the-berg-assetupload .icon-text-2 {
+  height: 31px;
+  left: 11px;
+  position: relative;
+  top: 9px;
+  width: 124px;
+}
+
+.the-berg-assetupload .menu-3 {
+  color: #92929d;
+  font-family: "Poppins", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  left: 49px;
+  letter-spacing: 0.16px;
+  line-height: 22px;
+  position: absolute;
+  top: 4px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .ic-dashboard {
+  height: 28px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 29px;
+}
+
+.the-berg-assetupload .group-33 {
+  height: 603px;
+  left: 543px;
+  position: absolute;
+  top: 597px;
+  width: 364px;
+}
+
+.the-berg-assetupload .overlap-4 {
+  height: 603px;
+  position: relative;
+}
+
+.the-berg-assetupload .group-34 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 603px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 354px;
+}
+
+.the-berg-assetupload .group-35 {
+  height: 572px;
+  left: 246px;
+  position: absolute;
+  top: 15px;
+  width: 113px;
+}
+
+.the-berg-assetupload .group-36 {
+  height: 604px;
+  left: 942px;
+  position: absolute;
+  top: 597px;
+  width: 364px;
+}
+
+.the-berg-assetupload .group-37 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 604px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 354px;
+}
+
+.the-berg-assetupload .rectangle-4 {
+  -webkit-backdrop-filter: blur(8.06px) brightness(69.61%);
+  backdrop-filter: blur(8.06px) brightness(69.61%);
+  height: 4504px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 1441px;
+}
+
+.the-berg-assetupload .group-38 {
+  background-color: #fafafa;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 553px;
+  left: 310px;
+  position: absolute;
+  top: 362px;
+  width: 843px;
+}
+
+.the-berg-assetupload .group-39 {
+  height: 24px;
+  left: 44px;
+  position: absolute;
+  top: 46px;
+  width: 91px;
+}
+
+.the-berg-assetupload .his-dolorem-habemus-2 {
+  color: #f86229;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  height: 25px;
+  left: 29px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: -3px;
+  white-space: nowrap;
+  width: 62px;
+}
+
+.the-berg-assetupload .img-wrapper {
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  width: 24px;
+}
+
+.the-berg-assetupload .vector-3 {
+  height: 15px;
+  left: 3px;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  transform: rotate(-180deg);
+  width: 18px;
+}
+
+.the-berg-assetupload .button-wrapper {
+  background-color: #fa612f;
+  border-radius: 15px;
+  height: 48px;
+  left: 614px;
+  position: absolute;
+  top: 454px;
+  width: 189px;
+}
+
+.the-berg-assetupload .button-3 {
+  all: unset;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .light-button-primary-2 {
+  background-color: #92929d;
+  border-radius: 15px;
+  height: 48px;
+  left: 410px;
+  position: absolute;
+  top: 454px;
+  width: 189px;
+}
+
+.the-berg-assetupload .button-4 {
+  all: unset;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 73px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .light-button-primary-3 {
+  all: unset;
+  box-sizing: border-box;
+  height: 21px;
+  left: 344px;
+  position: absolute;
+  top: 468px;
+  width: 54px;
+}
+
+.the-berg-assetupload .button-5 {
+  all: unset;
+  box-sizing: border-box;
+  color: #92929d;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: -2px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .path-wrapper {
+  background-color: #fa612f;
+  border-radius: 16px;
+  height: 32px;
+  left: 794px;
+  position: absolute;
+  top: 14px;
+  width: 32px;
+}
+
+.the-berg-assetupload .path-6 {
+  height: 16px;
+  left: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 8px;
+  width: 16px;
+}
+
+.the-berg-assetupload .group-40 {
+  height: 331px;
+  left: 44px;
+  position: absolute;
+  top: 95px;
+  width: 759px;
+}
+
+.the-berg-assetupload .overlap-5 {
+  border-radius: 16px;
+  height: 289px;
+  left: 0;
+  position: absolute;
+  top: 42px;
+  width: 759px;
+}
+
+.the-berg-assetupload .light-field-default-3 {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #ebf0f4;
+  border-radius: 16px;
+  height: 289px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 759px;
+}
+
+.the-berg-assetupload .light-button-primary-4 {
+  height: 34px;
+  left: 15px;
+  position: absolute;
+  top: 237px;
+  width: 153px;
+}
+
+.the-berg-assetupload .overlap-group-7 {
+  border: 1px solid;
+  border-color: #fa612f;
+  border-radius: 15px;
+  height: 35px;
+  position: relative;
+  width: 154px;
+}
+
+.the-berg-assetupload .button-6 {
+  all: unset;
+  box-sizing: border-box;
+  color: #fa612f;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+}
+
+.the-berg-assetupload .path-7 {
+  height: 23px;
+  left: 182px;
+  object-fit: cover;
+  position: absolute;
+  top: 243px;
+  width: 35px;
+}
+
+.the-berg-assetupload .shape {
+  height: 23px;
+  left: 232px;
+  object-fit: cover;
+  position: absolute;
+  top: 243px;
+  width: 31px;
+}
+
+.the-berg-assetupload .menu-wrapper {
+  height: 31px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 305px;
+}
+
+.the-berg-assetupload .p {
+  color: #171725;
+  font-family: "Poppins", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0.16px;
+  line-height: 22px;
+  position: absolute;
+  top: 4px;
+  white-space: nowrap;
+}
