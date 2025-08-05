@@ -1,8 +1,14 @@
-import React from "react";
+// Bring in useState from React so we can track which filter is currently active
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
 export const Screen14 = () => {
+  // selectedFilter holds the currently active filter.  When it is "View All" we
+  // show every newsletter card.  Otherwise we show only those cards whose
+  // category matches the selected filter.  This makes the newsletter section
+  // interactive without changing the structure of the existing markup.
+  const [selectedFilter, setSelectedFilter] = useState("View All");
   return (
     <div className="screen-14">
       <Link className="the-berg-5" to="/the-berg-sitedirector">
@@ -202,7 +208,13 @@ export const Screen14 = () => {
                   <div className="overlap-group-97">
                     <div className="rectangle-93" />
 
-                    <div className="text-wrapper-182">View all</div>
+                    {/* "View all" resets the filter so all cards are shown */}
+                    <div
+                      className="text-wrapper-182"
+                      onClick={() => setSelectedFilter("View All")}
+                    >
+                      View all
+                    </div>
                   </div>
                 </div>
 
@@ -210,7 +222,13 @@ export const Screen14 = () => {
                   <div className="overlap-group-97">
                     <div className="rectangle-94" />
 
-                    <div className="text-wrapper-183">Our People</div>
+                    {/* Filter to show cards tagged as "Our People" */}
+                    <div
+                      className="text-wrapper-183"
+                      onClick={() => setSelectedFilter("Our People")}
+                    >
+                      Our People
+                    </div>
                   </div>
                 </div>
               </div>
@@ -222,7 +240,13 @@ export const Screen14 = () => {
                   <div className="overlap-group-97">
                     <div className="rectangle-93" />
 
-                    <div className="text-wrapper-182">View all</div>
+                    {/* "View all" resets the filter so all cards are shown */}
+                    <div
+                      className="text-wrapper-182"
+                      onClick={() => setSelectedFilter("View All")}
+                    >
+                      View all
+                    </div>
                   </div>
                 </div>
 
@@ -230,7 +254,13 @@ export const Screen14 = () => {
                   <div className="overlap-group-97">
                     <div className="rectangle-94" />
 
-                    <div className="text-wrapper-183">HR Corner</div>
+                    {/* Filter to show cards tagged as "HR Corner" */}
+                    <div
+                      className="text-wrapper-183"
+                      onClick={() => setSelectedFilter("HR Corner")}
+                    >
+                      HR Corner
+                    </div>
                   </div>
                 </div>
               </div>
@@ -242,7 +272,13 @@ export const Screen14 = () => {
                   <div className="overlap-group-97">
                     <div className="rectangle-93" />
 
-                    <div className="text-wrapper-182">View all</div>
+                    {/* "View all" resets the filter so all cards are shown */}
+                    <div
+                      className="text-wrapper-182"
+                      onClick={() => setSelectedFilter("View All")}
+                    >
+                      View all
+                    </div>
                   </div>
                 </div>
 
@@ -250,7 +286,13 @@ export const Screen14 = () => {
                   <div className="overlap-group-97">
                     <div className="rectangle-94" />
 
-                    <div className="text-wrapper-183">Health &amp; Safety</div>
+                    {/* Filter to show cards tagged as "Health & Safety" */}
+                    <div
+                      className="text-wrapper-183"
+                      onClick={() => setSelectedFilter("Health & Safety")}
+                    >
+                      Health &amp; Safety
+                    </div>
                   </div>
                 </div>
               </div>
@@ -262,7 +304,13 @@ export const Screen14 = () => {
                   <div className="overlap-group-97">
                     <div className="rectangle-93" />
 
-                    <div className="text-wrapper-182">View all</div>
+                    {/* "View all" resets the filter so all cards are shown */}
+                    <div
+                      className="text-wrapper-182"
+                      onClick={() => setSelectedFilter("View All")}
+                    >
+                      View all
+                    </div>
                   </div>
                 </div>
 
@@ -270,7 +318,13 @@ export const Screen14 = () => {
                   <div className="overlap-group-97">
                     <div className="rectangle-94" />
 
-                    <div className="text-wrapper-183">Site Updates</div>
+                    {/* Filter to show cards tagged as "Site Updates" */}
+                    <div
+                      className="text-wrapper-183"
+                      onClick={() => setSelectedFilter("Site Updates")}
+                    >
+                      Site Updates
+                    </div>
                   </div>
                 </div>
               </div>
@@ -338,7 +392,16 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <Link className="group-441" to="/the-berg-team-spotlight">
+        <Link
+          className="group-441"
+          to="/the-berg-team-spotlight"
+          style={{
+            display:
+              selectedFilter === "View All" || selectedFilter === "Our People"
+                ? undefined
+                : "none",
+          }}
+        >
           <div className="overlap-200">
             <div className="group-442">
               <div className="future-of-customer-s-20">Team Spotlight</div>
@@ -426,7 +489,15 @@ export const Screen14 = () => {
           </div>
         </Link>
 
-        <div className="group-446">
+        <div
+          className="group-446"
+          style={{
+            display:
+              selectedFilter === "View All" || selectedFilter === "HR Corner"
+                ? undefined
+                : "none",
+          }}
+        >
           <div className="overlap-200">
             <div className="group-442">
               <div className="future-of-customer-s-20">
@@ -518,7 +589,15 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <div className="group-447">
+        <div
+          className="group-447"
+          style={{
+            display:
+              selectedFilter === "View All" || selectedFilter === "Site Updates"
+                ? undefined
+                : "none",
+          }}
+        >
           <div className="overlap-200">
             <div className="group-442">
               <div className="future-of-customer-s-20">
@@ -608,7 +687,15 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <div className="group-448">
+        <div
+          className="group-448"
+          style={{
+            display:
+              selectedFilter === "View All" || selectedFilter === "Our People"
+                ? undefined
+                : "none",
+          }}
+        >
           <div className="group-449">
             <div className="future-of-customer-s-20">Employee Spotlight</div>
 
@@ -654,7 +741,17 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <Link className="group-450" to="/the-berg-the-green-spot">
+        <Link
+          className="group-450"
+          to="/the-berg-the-green-spot"
+          style={{
+            display:
+              selectedFilter === "View All" ||
+              selectedFilter === "Health & Safety"
+                ? undefined
+                : "none",
+          }}
+        >
           <div className="group-451">
             <div className="overlap-201">
               <div className="div-19" />
@@ -730,7 +827,16 @@ export const Screen14 = () => {
           </div>
         </Link>
 
-        <div className="group-454">
+        <div
+          className="group-454"
+          style={{
+            display:
+              selectedFilter === "View All" ||
+              selectedFilter === "Health & Safety"
+                ? undefined
+                : "none",
+          }}
+        >
           <div className="group-449">
             <div className="future-of-customer-s-20">
               Athletic Trainer Corner
@@ -778,7 +884,16 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <Link className="group-455" to="/the-berg-3">
+        <Link
+          className="group-455"
+          to="/the-berg-3"
+          style={{
+            display:
+              selectedFilter === "View All" || selectedFilter === "Site Updates"
+                ? undefined
+                : "none",
+          }}
+        >
           <div className="group-451">
             <div className="overlap-201">
               <div className="div-19" />
@@ -849,7 +964,16 @@ export const Screen14 = () => {
           </div>
         </Link>
 
-        <Link className="group-456" to="/the-berg-4">
+        <Link
+          className="group-456"
+          to="/the-berg-4"
+          style={{
+            display:
+              selectedFilter === "View All" || selectedFilter === "Site Updates"
+                ? undefined
+                : "none",
+          }}
+        >
           <div className="group-451">
             <div className="overlap-201">
               <div className="div-19" />
@@ -922,7 +1046,15 @@ export const Screen14 = () => {
           </div>
         </Link>
 
-        <div className="group-457">
+        <div
+          className="group-457"
+          style={{
+            display:
+              selectedFilter === "View All" || selectedFilter === "Our People"
+                ? undefined
+                : "none",
+          }}
+        >
           <div className="group-451">
             <div className="overlap-201">
               <div className="div-19" />
@@ -993,7 +1125,15 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <div className="group-458">
+        <div
+          className="group-458"
+          style={{
+            display:
+              selectedFilter === "View All" || selectedFilter === "HR Corner"
+                ? undefined
+                : "none",
+          }}
+        >
           <div className="group-449">
             <div className="future-of-customer-s-20">
               Monthly Benefit Highlight
