@@ -9,9 +9,87 @@ export const Screen14 = () => {
   // category matches the selected filter.  This makes the newsletter section
   // interactive without changing the structure of the existing markup.
   const [selectedFilter, setSelectedFilter] = useState("View All");
+
+  /**
+   * Compute inline styles for each newsletter card based on its assigned tags
+   * and the currently selected filter.  When the filter is set to "View All"
+   * the card retains its default absolute positioning defined in the CSS and
+   * flows as originally designed.  When a specific tag is selected we
+   * override the absolute positioning so the visible cards stack
+   * vertically and collapse unused space.  Cards whose tags do not match
+   * the current filter are hidden completely via display: none.
+   *
+   * @param {string[]} cardTags - The list of category tags assigned to a card.
+   * @returns {object} A style object to spread onto the card container.
+   */
+  const getCardStyle = (cardTags, cardWidth = null) => {
+    // Determine if this card should be shown based on the selected filter
+    const show = selectedFilter === "View All" || cardTags.includes(selectedFilter);
+    if (!show) {
+      return { display: "none" };
+    }
+    // In "View All" mode we keep the default absolute positioning; returning
+    // an empty object allows the CSS styles to apply unchanged.
+    if (selectedFilter === "View All") {
+      return {};
+    }
+    // For filtered views, remove absolute positioning and allow the card to
+    // participate in a flex-based grid.  We set a relative position so
+    // absolutely positioned children (e.g. images, text) remain correct.
+    // Each card keeps its original width (if provided) and height, and
+    // spacing is introduced via margins.  When no width is provided we
+    // default to auto allowing the browser to calculate the width.
+    return {
+      position: "relative",
+      left: "0",
+      top: "0",
+      width: cardWidth ? `${cardWidth}px` : "auto",
+      height: "585px",
+      marginBottom: "24px",
+    };
+  };
+
+  /**
+   * Compute inline styles for the filter pills.  Each pill shares the
+   * same underlying markup (either rectangle-93 or rectangle-94) and
+   * differs only by its associated tag.  When the pill's tag matches
+   * the currently selected filter we apply the blue theme (#005896)
+   * used throughout the design; otherwise the pill appears as an
+   * unselected state with a white background and grey border.  These
+   * helpers centralize the styling logic so that all duplicate pills
+   * remain in sync.
+   *
+   * @param {string} tag - The tag associated with the pill (e.g.
+   *   "View All", "Our People", "HR Corner", etc.)
+   * @returns {object} A style object for the pill's background and border.
+   */
+  const getFilterPillStyle = (tag) => {
+    return {
+      backgroundColor: selectedFilter === tag ? "#005896" : "#ffffff",
+      borderColor: selectedFilter === tag ? "#005896" : "#bcbcbc",
+    };
+  };
+
+  /**
+   * Compute inline styles for the text inside a filter pill.  When a
+   * pill is selected the text should be white to contrast the blue
+   * background; otherwise it inherits the grey used in the default
+   * stylesheet.  All other typography (font size, weight, etc.)
+   * remains unchanged.
+   *
+   * @param {string} tag - The tag associated with the pill (e.g.
+   *   "View All", "Our People", "HR Corner", etc.)
+   * @returns {object} A style object controlling the text colour.
+   */
+  const getFilterTextStyle = (tag) => {
+    return {
+      color: selectedFilter === tag ? "#FFFFFF" : "#667085",
+    };
+  };
   return (
     <div className="screen-14">
-      <Link className="the-berg-5" to="/the-berg-sitedirector">
+      {/* Replace the top-level Link with a plain div so the entire page is not clickable. */}
+      <div className="the-berg-5">
         <div className="overlap-198">
           <img
             className="rectangle-91"
@@ -66,7 +144,8 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <div className="group-435">
+        {/* Make the message card itself clickable instead of the entire page */}
+        <Link to="/the-berg-sitedirector" className="group-435">
           <div className="future-of-customer-s-19">
             Message from Our Director
           </div>
@@ -109,7 +188,7 @@ export const Screen14 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Link>
 
         <div className="footer-menu-9">
           <footer className="footer-20">
@@ -204,14 +283,31 @@ export const Screen14 = () => {
           <div className="overlap-group-97">
             <div className="tab-rollover-36">
               <div className="overlap-199">
+                {/* Wrap the entire filter pill in a single container with an onClick so
+                   clicking anywhere on the pill triggers the filter change.  This
+                   prevents accidental clicks on underlying cards due to layering. */}
                 <div className="group-440">
                   <div className="overlap-group-97">
-                    <div className="rectangle-93" />
-
+                    <div
+                      className="rectangle-93"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("View All");
+                      }}
+                      /* Use helper to compute the appropriate colours for the pill */
+                      style={getFilterPillStyle("View All")}
+                    />
                     {/* "View all" resets the filter so all cards are shown */}
                     <div
                       className="text-wrapper-182"
-                      onClick={() => setSelectedFilter("View All")}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("View All");
+                      }}
+                      /* Compute text colour based on selected filter */
+                      style={getFilterTextStyle("View All")}
                     >
                       View all
                     </div>
@@ -220,12 +316,25 @@ export const Screen14 = () => {
 
                 <div className="group-440">
                   <div className="overlap-group-97">
-                    <div className="rectangle-94" />
-
+                    <div
+                      className="rectangle-94"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("Our People");
+                      }}
+                      /* Highlight the selected filter pill using helper */
+                      style={getFilterPillStyle("Our People")}
+                    />
                     {/* Filter to show cards tagged as "Our People" */}
                     <div
                       className="text-wrapper-183"
-                      onClick={() => setSelectedFilter("Our People")}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("Our People");
+                      }}
+                      style={getFilterTextStyle("Our People")}
                     >
                       Our People
                     </div>
@@ -238,12 +347,24 @@ export const Screen14 = () => {
               <div className="overlap-199">
                 <div className="group-440">
                   <div className="overlap-group-97">
-                    <div className="rectangle-93" />
-
+                    <div
+                      className="rectangle-93"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("View All");
+                      }}
+                      style={getFilterPillStyle("View All")}
+                    />
                     {/* "View all" resets the filter so all cards are shown */}
                     <div
                       className="text-wrapper-182"
-                      onClick={() => setSelectedFilter("View All")}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("View All");
+                      }}
+                      style={getFilterTextStyle("View All")}
                     >
                       View all
                     </div>
@@ -252,12 +373,24 @@ export const Screen14 = () => {
 
                 <div className="group-440">
                   <div className="overlap-group-97">
-                    <div className="rectangle-94" />
-
+                    <div
+                      className="rectangle-94"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("HR Corner");
+                      }}
+                      style={getFilterPillStyle("HR Corner")}
+                    />
                     {/* Filter to show cards tagged as "HR Corner" */}
                     <div
                       className="text-wrapper-183"
-                      onClick={() => setSelectedFilter("HR Corner")}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("HR Corner");
+                      }}
+                      style={getFilterTextStyle("HR Corner")}
                     >
                       HR Corner
                     </div>
@@ -270,12 +403,24 @@ export const Screen14 = () => {
               <div className="overlap-199">
                 <div className="group-440">
                   <div className="overlap-group-97">
-                    <div className="rectangle-93" />
-
+                    <div
+                      className="rectangle-93"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("View All");
+                      }}
+                      style={getFilterPillStyle("View All")}
+                    />
                     {/* "View all" resets the filter so all cards are shown */}
                     <div
                       className="text-wrapper-182"
-                      onClick={() => setSelectedFilter("View All")}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("View All");
+                      }}
+                      style={getFilterTextStyle("View All")}
                     >
                       View all
                     </div>
@@ -284,12 +429,24 @@ export const Screen14 = () => {
 
                 <div className="group-440">
                   <div className="overlap-group-97">
-                    <div className="rectangle-94" />
-
+                    <div
+                      className="rectangle-94"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("Health & Safety");
+                      }}
+                      style={getFilterPillStyle("Health & Safety")}
+                    />
                     {/* Filter to show cards tagged as "Health & Safety" */}
                     <div
                       className="text-wrapper-183"
-                      onClick={() => setSelectedFilter("Health & Safety")}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("Health & Safety");
+                      }}
+                      style={getFilterTextStyle("Health & Safety")}
                     >
                       Health &amp; Safety
                     </div>
@@ -302,12 +459,24 @@ export const Screen14 = () => {
               <div className="overlap-199">
                 <div className="group-440">
                   <div className="overlap-group-97">
-                    <div className="rectangle-93" />
-
+                    <div
+                      className="rectangle-93"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("View All");
+                      }}
+                      style={getFilterPillStyle("View All")}
+                    />
                     {/* "View all" resets the filter so all cards are shown */}
                     <div
                       className="text-wrapper-182"
-                      onClick={() => setSelectedFilter("View All")}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("View All");
+                      }}
+                      style={getFilterTextStyle("View All")}
                     >
                       View all
                     </div>
@@ -316,12 +485,24 @@ export const Screen14 = () => {
 
                 <div className="group-440">
                   <div className="overlap-group-97">
-                    <div className="rectangle-94" />
-
+                    <div
+                      className="rectangle-94"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("Site Updates");
+                      }}
+                      style={getFilterPillStyle("Site Updates")}
+                    />
                     {/* Filter to show cards tagged as "Site Updates" */}
                     <div
                       className="text-wrapper-183"
-                      onClick={() => setSelectedFilter("Site Updates")}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setSelectedFilter("Site Updates");
+                      }}
+                      style={getFilterTextStyle("Site Updates")}
                     >
                       Site Updates
                     </div>
@@ -392,15 +573,37 @@ export const Screen14 = () => {
           </div>
         </div>
 
+        {/* Wrap all newsletter cards in a container.  In filtered views this
+            becomes a flexbox to allow cards to flow and collapse space. */}
+        <div
+          className="newsletter-container"
+          /*
+           * When filtering (selectedFilter !== "View All") we switch this
+           * container to a flex layout and absolutely position it so that
+           * the top aligns with the original first card (1187px from the
+           * top).  In the default "View All" state we return an empty
+           * style so the original CSS positioning applies.
+           */
+          style={
+            selectedFilter === "View All"
+              ? {}
+              : {
+                  position: "absolute",
+                  top: "1187px",
+                  left: 0,
+                  width: "100%",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "24px",
+                  alignItems: "flex-start",
+                }
+          }
+        >
+
         <Link
-          className="group-441"
+          className="group-441 team-spotlight"
           to="/the-berg-team-spotlight"
-          style={{
-            display:
-              selectedFilter === "View All" || selectedFilter === "Our People"
-                ? undefined
-                : "none",
-          }}
+          style={getCardStyle(["Our People"], 364)}
         >
           <div className="overlap-200">
             <div className="group-442">
@@ -490,13 +693,8 @@ export const Screen14 = () => {
         </Link>
 
         <div
-          className="group-446"
-          style={{
-            display:
-              selectedFilter === "View All" || selectedFilter === "HR Corner"
-                ? undefined
-                : "none",
-          }}
+          className="group-446 message-from-leadership"
+          style={getCardStyle(["HR Corner"], 364)}
         >
           <div className="overlap-200">
             <div className="group-442">
@@ -590,13 +788,8 @@ export const Screen14 = () => {
         </div>
 
         <div
-          className="group-447"
-          style={{
-            display:
-              selectedFilter === "View All" || selectedFilter === "Site Updates"
-                ? undefined
-                : "none",
-          }}
+          className="group-447 july-events"
+          style={getCardStyle(["Site Updates"], 364)}
         >
           <div className="overlap-200">
             <div className="group-442">
@@ -688,13 +881,9 @@ export const Screen14 = () => {
         </div>
 
         <div
-          className="group-448"
-          style={{
-            display:
-              selectedFilter === "View All" || selectedFilter === "Our People"
-                ? undefined
-                : "none",
-          }}
+          className="group-448 employee-spotlight"
+          /* Employee Spotlight belongs to "Our People" */
+          style={getCardStyle(["Our People"], 354)}
         >
           <div className="group-449">
             <div className="future-of-customer-s-20">Employee Spotlight</div>
@@ -742,15 +931,10 @@ export const Screen14 = () => {
         </div>
 
         <Link
-          className="group-450"
+          className="group-450 one-fact-big-impact"
           to="/the-berg-the-green-spot"
-          style={{
-            display:
-              selectedFilter === "View All" ||
-              selectedFilter === "Health & Safety"
-                ? undefined
-                : "none",
-          }}
+          /* One Fact, Big Impact belongs to Health & Safety */
+          style={getCardStyle(["Health & Safety"], 359)}
         >
           <div className="group-451">
             <div className="overlap-201">
@@ -828,14 +1012,9 @@ export const Screen14 = () => {
         </Link>
 
         <div
-          className="group-454"
-          style={{
-            display:
-              selectedFilter === "View All" ||
-              selectedFilter === "Health & Safety"
-                ? undefined
-                : "none",
-          }}
+          className="group-454 athletic-trainer-corner"
+          /* Athletic Trainer Corner belongs to Health & Safety */
+          style={getCardStyle(["Health & Safety"], 354)}
         >
           <div className="group-449">
             <div className="future-of-customer-s-20">
@@ -885,14 +1064,10 @@ export const Screen14 = () => {
         </div>
 
         <Link
-          className="group-455"
+          className="group-455 we-saw"
           to="/the-berg-3"
-          style={{
-            display:
-              selectedFilter === "View All" || selectedFilter === "Site Updates"
-                ? undefined
-                : "none",
-          }}
+          /* We Saw belongs to Site Updates */
+          style={getCardStyle(["Site Updates"], 359)}
         >
           <div className="group-451">
             <div className="overlap-201">
@@ -965,14 +1140,10 @@ export const Screen14 = () => {
         </Link>
 
         <Link
-          className="group-456"
+          className="group-456 where-in-pepsico-world"
           to="/the-berg-4"
-          style={{
-            display:
-              selectedFilter === "View All" || selectedFilter === "Site Updates"
-                ? undefined
-                : "none",
-          }}
+          /* Where in PepsiCo World belongs to Site Updates */
+          style={getCardStyle(["Site Updates"], 359)}
         >
           <div className="group-451">
             <div className="overlap-201">
@@ -1047,13 +1218,9 @@ export const Screen14 = () => {
         </Link>
 
         <div
-          className="group-457"
-          style={{
-            display:
-              selectedFilter === "View All" || selectedFilter === "Our People"
-                ? undefined
-                : "none",
-          }}
+          className="group-457 work-anniversaries"
+          /* Work Anniversaries belongs to Our People */
+          style={getCardStyle(["Our People"], 359)}
         >
           <div className="group-451">
             <div className="overlap-201">
@@ -1126,13 +1293,9 @@ export const Screen14 = () => {
         </div>
 
         <div
-          className="group-458"
-          style={{
-            display:
-              selectedFilter === "View All" || selectedFilter === "HR Corner"
-                ? undefined
-                : "none",
-          }}
+          className="group-458 monthly-benefit-highlight"
+          /* Monthly Benefit Highlight belongs to HR Corner */
+          style={getCardStyle(["HR Corner"], 354)}
         >
           <div className="group-449">
             <div className="future-of-customer-s-20">
@@ -1181,7 +1344,11 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <div className="group-459">
+        <div
+          className="group-459 new-hires"
+          /* New Hires belongs to Our People */
+          style={getCardStyle(["Our People"], 354)}
+        >
           <div className="group-449">
             <div className="future-of-customer-s-20">New Hires</div>
 
@@ -1229,7 +1396,11 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <div className="group-460">
+        <div
+          className="group-460 basketball-tournament"
+          /* Basketball Tournament belongs to Site Updates */
+          style={getCardStyle(["Site Updates"], 354)}
+        >
           <div className="group-449">
             <div className="future-of-customer-s-20">Basketball Tournament</div>
 
@@ -1275,7 +1446,11 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <div className="group-461">
+        <div
+          className="group-461 are-cheetos-chips"
+          /* Are Cheetos Chips belongs to Site Updates */
+          style={getCardStyle(["Site Updates"], 354)}
+        >
           <div className="group-449">
             <div className="future-of-customer-s-20">Are Cheetos Chips?</div>
 
@@ -1322,7 +1497,14 @@ export const Screen14 = () => {
           </div>
         </div>
 
-        <div className="image-slider-4">
+        {/* Close the newsletter container before starting the image slider */}
+        </div>
+
+        <div
+          className="image-slider-4"
+          /* Hide the quote slider when a specific newsletter filter is active */
+          style={{ display: selectedFilter === "View All" ? undefined : "none" }}
+        >
           <div className="overlap-200">
             <div className="group-462">
               <div className="overlap-202">
@@ -1827,7 +2009,7 @@ export const Screen14 = () => {
             </div>
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 };
