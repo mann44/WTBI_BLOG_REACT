@@ -1,11 +1,60 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./style.css";
 
 export const TheBergWorldMap = () => {
+  // Local state for form inputs.  Users can enter their job title,
+  // name and location.  When the Add me in! button is clicked the
+  // entered values are stored in localStorage and the user is
+  // returned to the map screen.
+  const [jobTitle, setJobTitle] = useState("");
+  const [userName, setUserName] = useState("");
+  const [userLocation, setUserLocation] = useState("");
+  const navigate = useNavigate();
+
+  // Handler to store the new entry in localStorage and navigate back
+  // to the map display.  This uses a simple array stored under
+  // "bergLocations" to persist entries between sessions.  Only
+  // non-empty locations are stored.
+  const handleAddMeIn = () => {
+    const entry = {
+      jobTitle: jobTitle.trim(),
+      name: userName.trim(),
+      location: userLocation.trim(),
+    };
+    if (entry.location) {
+      try {
+        const existing = JSON.parse(
+          localStorage.getItem("bergLocations") || "[]",
+        );
+        if (Array.isArray(existing)) {
+          existing.push(entry);
+          localStorage.setItem(
+            "bergLocations",
+            JSON.stringify(existing),
+          );
+        } else {
+          localStorage.setItem(
+            "bergLocations",
+            JSON.stringify([entry]),
+          );
+        }
+      } catch (e) {
+        localStorage.setItem("bergLocations", JSON.stringify([entry]));
+      }
+    }
+    // Navigate back to the world map screen to see the new pin
+    navigate("/the-berg-world-map");
+  };
+
   return (
     <div className="the-berg-world-map">
-      <Link className="overlap-wrapper-2" to="/the-berg-assetupload">
+      {/*
+        Replace the top-level Link with a div so the entire page is not
+        clickable. The form should not automatically navigate to the asset
+        upload page when the user interacts with it. Instead, navigation
+        happens explicitly via the Add me in button or other links. */}
+      <div className="overlap-wrapper-2">
         <div className="overlap-51">
           <div className="rectangle-35" />
 
@@ -3937,26 +3986,79 @@ export const TheBergWorldMap = () => {
               <img className="path-412" alt="Path" src="/img/path-565.png" />
             </div>
 
+            {/* Input for job title */}
             <div className="light-field-default-29">
-              <div className="placeholder-18">Job Title</div>
+              <input
+                type="text"
+                className="placeholder-18"
+                placeholder="Job Title"
+                value={jobTitle}
+                onChange={(e) => setJobTitle(e.target.value)}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "transparent",
+                  color: "inherit",
+                }}
+              />
             </div>
 
+            {/* Input for user name */}
             <div className="light-field-default-30">
-              <div className="placeholder-18">Name</div>
+              <input
+                type="text"
+                className="placeholder-18"
+                placeholder="Name"
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "transparent",
+                  color: "inherit",
+                }}
+              />
             </div>
 
+            {/* Input for location */}
             <div className="light-field-default-31">
-              <div className="placeholder-19">Where are you from?</div>
-
+              <input
+                type="text"
+                className="placeholder-19"
+                placeholder="Where are you from?"
+                value={userLocation}
+                onChange={(e) => setUserLocation(e.target.value)}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "transparent",
+                  color: "inherit",
+                }}
+              />
+              {/* decorative path image */}
               <img className="path-413" alt="Path" src="/img/path-564.png" />
             </div>
 
-            <Link className="light-button-primary-17" to="/the-berg-world-map">
-              <button className="button-24">Add me in!</button>
-            </Link>
+            {/* Replace link with clickable button to handle submission */}
+            <div
+              className="light-button-primary-17"
+              onClick={handleAddMeIn}
+              style={{ cursor: "pointer" }}
+            >
+              <button className="button-24" type="button">
+                Add me in!
+              </button>
+            </div>
           </div>
         </div>
-      </Link>
+      {/* Closing tag for the top-level wrapper (replaced Link with div) */}
+      </div>
     </div>
   );
 };

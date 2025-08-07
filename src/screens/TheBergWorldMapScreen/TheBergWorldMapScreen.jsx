@@ -1,11 +1,79 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
 export const TheBergWorldMapScreen = () => {
+  // Load user-entered locations from localStorage.  Each entry should
+  // have shape { jobTitle: string, name: string, location: string }.
+  const [locations, setLocations] = useState([]);
+  useEffect(() => {
+    try {
+      const stored = JSON.parse(
+        localStorage.getItem("bergLocations") || "[]",
+      );
+      if (Array.isArray(stored)) {
+        setLocations(stored);
+      }
+    } catch (e) {
+      // ignore parse errors
+    }
+  }, []);
+
+  // Generate a pseudo-random but deterministic coordinate for each
+  // location based on the string contents.  This avoids needing a
+  // geocoding API.  Coordinates are percentages relative to the
+  // container (10% to 90% range to keep dots within the map area).
+  const getCoordinateForLocation = (loc) => {
+    const clean = (loc || "").toLowerCase().trim();
+    let hash = 0;
+    for (let i = 0; i < clean.length; i++) {
+      hash = (hash << 5) - hash + clean.charCodeAt(i);
+      hash &= hash; // convert to 32bit integer
+    }
+    const x = 10 + (Math.abs(hash) % 80); // between 10 and 90
+    const y = 10 + (Math.abs(hash >> 3) % 60); // between 10 and 70
+    return { x, y };
+  };
+
+  // Helpers to parse the location string into parts for counting.
+  const parseLocationParts = (loc) => {
+    return (loc || "")
+      .split(",")
+      .map((p) => p.trim())
+      .filter((p) => p.length > 0);
+  };
+  const parseCountry = (loc) => {
+    const parts = parseLocationParts(loc);
+    return parts[parts.length - 1] || "";
+  };
+  const parseState = (loc) => {
+    const parts = parseLocationParts(loc);
+    if (parts.length >= 2) {
+      return parts[parts.length - 2];
+    }
+    return parts[0] || "";
+  };
+
+  // Compute counts for display.  Use Sets to ensure uniqueness.
+  const countriesCount = locations.length
+    ? new Set(locations.map((l) => parseCountry(l.location))).size
+    : 0;
+  const statesCount = locations.length
+    ? new Set(locations.map((l) => parseState(l.location))).size
+    : 0;
+  const hometownCount = locations.length
+    ? new Set(locations.map((l) => (l.location || "").trim())).size
+    : 0;
+
   return (
-    <div className="the-berg-world-map-screen">
-      <Link className="the-berg-world-map-2" to="/the-berg-world-map-1">
+    <div
+      className="the-berg-world-map-screen"
+      style={{ position: "relative" }}
+    >
+      {/* Replace the top-level Link with a plain div so the entire page is
+          not a clickable link.  Navigation to the form page should
+          occur only when the user clicks the Add me in button below. */}
+      <div className="the-berg-world-map-2">
         <div className="overlap-125">
           <div className="rectangle-75" />
 
@@ -3726,7 +3794,7 @@ export const TheBergWorldMapScreen = () => {
                 REPRESENTED
               </div>
 
-              <div className="we-craft-digital-21">37</div>
+              <div className="we-craft-digital-21">{countriesCount}</div>
 
               <div className="group-369">
                 <p className="his-dolorem-habemus-46">
@@ -3744,7 +3812,7 @@ export const TheBergWorldMapScreen = () => {
                 PROVINCES
               </div>
 
-              <div className="we-craft-digital-23">128</div>
+              <div className="we-craft-digital-23">{statesCount}</div>
 
               <div className="group-369">
                 <p className="his-dolorem-habemus-46">
@@ -3762,7 +3830,7 @@ export const TheBergWorldMapScreen = () => {
                 HOMETOWNS
               </div>
 
-              <div className="we-craft-digital-23">512</div>
+              <div className="we-craft-digital-23">{hometownCount}</div>
 
               <div className="group-369">
                 <p className="his-dolorem-habemus-46">
@@ -4059,7 +4127,32 @@ export const TheBergWorldMapScreen = () => {
             </div>
           </footer>
         </div>
-      </Link>
+        {/* Render orange dots for each user location on top of the map.  This
+            overlay spans the entire screen and uses absolute positioning
+            percentages so the dots roughly align with the underlying map.
+            Pointer events are disabled to avoid blocking clicks on other
+            elements. */}
+        {locations.map((loc, idx) => {
+          const { x, y } = getCoordinateForLocation(loc.location);
+          return (
+            <div
+              key={`dot-${idx}`}
+              style={{
+                position: "absolute",
+                left: `${x}%`,
+                top: `${y}%`,
+                width: "8px",
+                height: "8px",
+                borderRadius: "50%",
+                backgroundColor: "#fba919",
+                transform: "translate(-50%, -50%)",
+                pointerEvents: "none",
+              }}
+            />
+          );
+        })}
+      {/* Closing tag for the top-level map wrapper (replaced Link with div) */}
+      </div>
     </div>
   );
 };
