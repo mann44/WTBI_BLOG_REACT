@@ -1,0 +1,1289 @@
+.the-berg-the-green {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.the-berg-the-green .overlap-wrapper-4 {
+  background-color: #fafafa;
+  display: block;
+  height: 4175px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.the-berg-the-green .overlap-113 {
+  height: 4175px;
+  left: -5px;
+  position: relative;
+  width: 1446px;
+}
+
+.the-berg-the-green .rectangle-57 {
+  height: 596px;
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.the-berg-the-green .rectangle-58 {
+  background: linear-gradient(
+    180deg,
+    #004e8b 0%,
+    rgba(0, 86, 151, 0.1) 42.36%,
+    rgba(0, 87, 152, 0) 100%
+  );
+  height: 596px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.the-berg-the-green .header-13 {
+  background-color: transparent;
+  height: 96px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.the-berg-the-green .overlap-group-59 {
+  height: 96px;
+  position: relative;
+  width: 1440px;
+}
+
+.the-berg-the-green .search-9 {
+  border: 1px solid;
+  border-color: #ffffff;
+  border-radius: 20px;
+  height: 40px;
+  left: 1259px;
+  position: absolute;
+  top: 28px;
+  width: 40px;
+}
+
+.the-berg-the-green .icon-26 {
+  height: 24px;
+  left: 7px;
+  position: relative;
+  top: 7px;
+  width: 24px;
+}
+
+.the-berg-the-green .vector-36 {
+  height: 20px;
+  left: 2px;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  width: 20px;
+}
+
+.the-berg-the-green .header-14 {
+  height: 96px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.the-berg-the-green .menu-34 {
+  height: 25px;
+  left: 1054px;
+  position: absolute;
+  top: 39px;
+  width: 163px;
+}
+
+.the-berg-the-green .destination-10 {
+  color: #ffffff;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: -4px;
+  white-space: nowrap;
+  width: 96px;
+}
+
+.the-berg-the-green .tours-10 {
+  color: #ffffff;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 114px;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: -4px;
+  white-space: nowrap;
+  width: 49px;
+}
+
+.the-berg-the-green .content-19 {
+  height: 35px;
+  left: 1289px;
+  position: absolute;
+  top: 33px;
+  width: 109px;
+}
+
+.the-berg-the-green .button-29 {
+  all: unset;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 35px;
+  position: relative;
+}
+
+.the-berg-the-green .sign-up-10 {
+  color: #ffffff;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 24px;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  text-align: center;
+  top: 3px;
+  white-space: nowrap;
+  width: 83px;
+}
+
+.the-berg-the-green .VENTURE-19 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  left: 112px;
+  letter-spacing: 0;
+  line-height: 33px;
+  position: absolute;
+  top: 25px;
+  white-space: nowrap;
+  width: 379px;
+}
+
+.the-berg-the-green .group-308 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 559px;
+  left: 140px;
+  position: absolute;
+  top: 1154px;
+  width: 571px;
+}
+
+.the-berg-the-green .overlap-114 {
+  border-radius: 16px 16px 0px 0px;
+  height: 302px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 571px;
+}
+
+.the-berg-the-green .shape-6 {
+  height: 36px;
+  left: 261px;
+  object-fit: cover;
+  position: absolute;
+  top: 158px;
+  width: 48px;
+}
+
+.the-berg-the-green .rectangle-59 {
+  border-radius: 16px 16px 0px 0px;
+  height: 302px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 571px;
+}
+
+.the-berg-the-green .future-of-customer-s-10 {
+  color: #333333;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 600;
+  left: 34px;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 332px;
+  white-space: nowrap;
+}
+
+.the-berg-the-green .ainara-vergara-11 {
+  color: #333333;
+  font-family: "DM Sans", Helvetica;
+  font-size: 13px;
+  font-weight: 700;
+  left: 34px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 366px;
+  white-space: nowrap;
+}
+
+.the-berg-the-green .his-dolorem-habemus-30 {
+  color: #999999;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 83px;
+  left: 34px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 398px;
+  width: 484px;
+}
+
+.the-berg-the-green .group-309 {
+  height: 24px;
+  left: 34px;
+  position: absolute;
+  top: 510px;
+  width: 119px;
+}
+
+.the-berg-the-green .overlap-group-60 {
+  height: 28px;
+  position: relative;
+  top: -4px;
+}
+
+.the-berg-the-green .his-dolorem-habemus-31 {
+  color: #f86229;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  height: 25px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 119px;
+}
+
+.the-berg-the-green .icon-27 {
+  height: 24px;
+  left: 85px;
+  position: absolute;
+  top: 4px;
+  width: 24px;
+}
+
+.the-berg-the-green .vector-37 {
+  height: 15px;
+  left: 3px;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: 18px;
+}
+
+.the-berg-the-green .group-310 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 559px;
+  left: 140px;
+  position: absolute;
+  top: 2362px;
+  width: 571px;
+}
+
+.the-berg-the-green .his-dolorem-habemus-32 {
+  color: #999999;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 83px;
+  left: 34px;
+  letter-spacing: 0;
+  line-height: 24px;
+  overflow: hidden;
+  position: absolute;
+  top: 398px;
+  width: 484px;
+}
+
+.the-berg-the-green .group-311 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 559px;
+  left: 759px;
+  position: absolute;
+  top: 2362px;
+  width: 571px;
+}
+
+.the-berg-the-green .group-312 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 559px;
+  left: 759px;
+  position: absolute;
+  top: 1154px;
+  width: 571px;
+}
+
+.the-berg-the-green .group-313 {
+  height: 155px;
+  left: 148px;
+  position: absolute;
+  top: 380px;
+  width: 472px;
+}
+
+.the-berg-the-green .overlap-115 {
+  height: 136px;
+  position: relative;
+  top: 16px;
+}
+
+.the-berg-the-green .we-craft-digital-16 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 81px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 80px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.the-berg-the-green .quidam-officiis-simi-3 {
+  color: #ffffff;
+  font-family: "DM Sans", Helvetica;
+  font-size: 23px;
+  font-weight: 700;
+  height: 50px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 32px;
+  position: absolute;
+  top: 86px;
+  width: 472px;
+}
+
+.the-berg-the-green .group-314 {
+  height: 304px;
+  left: 355px;
+  position: absolute;
+  top: 679px;
+  width: 506px;
+}
+
+.the-berg-the-green .future-of-customer-s-11 {
+  color: #333333;
+  font-family: "Poppins", Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 29px;
+  position: absolute;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.the-berg-the-green .ainara-vergara-12 {
+  color: #333333;
+  font-family: "DM Sans", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 21px;
+  position: absolute;
+  top: 44px;
+  white-space: nowrap;
+}
+
+.the-berg-the-green .his-dolorem-habemus-33 {
+  color: #999999;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 167px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 24px;
+  overflow: hidden;
+  position: absolute;
+  top: 85px;
+  width: 506px;
+}
+
+.the-berg-the-green .group-315 {
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 280px;
+  width: 119px;
+}
+
+.the-berg-the-green .footer-13 {
+  background-color: #0c141d;
+  height: 492px;
+  left: 4px;
+  position: absolute;
+  top: 3683px;
+  width: 1440px;
+}
+
+.the-berg-the-green .footer-14 {
+  height: 332px;
+  left: 112px;
+  position: relative;
+  top: 92px;
+  width: 1216px;
+}
+
+.the-berg-the-green .cel-31 {
+  height: 162px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1216px;
+}
+
+.the-berg-the-green .logo-text-10 {
+  height: 103px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 314px;
+}
+
+.the-berg-the-green .VENTURE-20 {
+  color: #ffffff;
+  font-family: "Sora", Helvetica;
+  font-size: 22px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 33px;
+  position: absolute;
+  top: -6px;
+  white-space: nowrap;
+  width: 235px;
+}
+
+.the-berg-the-green .text-wrapper-115 {
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 47px;
+  width: 314px;
+}
+
+.the-berg-the-green .menu-35 {
+  height: 159px;
+  left: 1050px;
+  position: absolute;
+  top: 3px;
+  width: 166px;
+}
+
+.the-berg-the-green .content-20 {
+  height: 159px;
+  position: relative;
+  width: 168px;
+}
+
+.the-berg-the-green .supports-10 {
+  color: #ffffff;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: -5px;
+  white-space: nowrap;
+  width: 168px;
+}
+
+.the-berg-the-green .cel-32 {
+  height: 102px;
+  left: 0;
+  position: absolute;
+  top: 57px;
+  width: 168px;
+}
+
+.the-berg-the-green .help-10 {
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: -4px;
+  white-space: nowrap;
+  width: 168px;
+}
+
+.the-berg-the-green .location-10 {
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 34px;
+  white-space: nowrap;
+  width: 168px;
+}
+
+.the-berg-the-green .employees-10 {
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 74px;
+  white-space: nowrap;
+  width: 168px;
+}
+
+.the-berg-the-green .cel-33 {
+  height: 52px;
+  left: 0;
+  position: absolute;
+  top: 280px;
+  width: 1218px;
+}
+
+.the-berg-the-green .overlap-group-61 {
+  height: 52px;
+  position: relative;
+}
+
+.the-berg-the-green .cel-34 {
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1216px;
+}
+
+.the-berg-the-green .frame-10 {
+  height: 27px;
+  left: 0;
+  position: absolute;
+  top: 25px;
+  width: 366px;
+}
+
+.the-berg-the-green .terms-condditions-10 {
+  -webkit-text-stroke: 1px #707070;
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: -5px;
+  white-space: nowrap;
+  width: 193px;
+}
+
+.the-berg-the-green .ellipse-15 {
+  background-color: #d9d9d9;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 3px;
+  height: 6px;
+  left: 211px;
+  position: absolute;
+  top: 7px;
+  width: 6px;
+}
+
+.the-berg-the-green .text-wrapper-116 {
+  -webkit-text-stroke: 1px #707070;
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 237px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: -5px;
+  white-space: nowrap;
+  width: 129px;
+}
+
+.the-berg-the-green .element-venture-all-10 {
+  -webkit-text-stroke: 1px #707070;
+  color: #98a2b3;
+  font-family: "Switzer-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 909px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 20px;
+  white-space: nowrap;
+  width: 309px;
+}
+
+.the-berg-the-green .group-316 {
+  height: 178px;
+  left: 148px;
+  position: absolute;
+  top: 686px;
+  width: 178px;
+}
+
+.the-berg-the-green .ellipse-16 {
+  border-radius: 89px;
+  height: 178px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 178px;
+}
+
+.the-berg-the-green .group-317 {
+  background-color: #00569a;
+  border-radius: 16px;
+  height: 310px;
+  left: 901px;
+  position: absolute;
+  top: 679px;
+  width: 429px;
+}
+
+.the-berg-the-green .we-craft-digital-17 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 30px;
+  font-weight: 700;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: 80px;
+  position: absolute;
+  top: 16px;
+  white-space: nowrap;
+}
+
+.the-berg-the-green .group-318 {
+  height: 184px;
+  left: 46px;
+  position: absolute;
+  top: 92px;
+  width: 296px;
+}
+
+.the-berg-the-green .his-dolorem-habemus-34 {
+  color: #ffffff;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  height: 186px;
+  left: 23px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: -4px;
+  width: 273px;
+}
+
+.the-berg-the-green .text-wrapper-117 {
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+}
+
+.the-berg-the-green .text-wrapper-118 {
+  font-family: "DM Sans", Helvetica;
+  font-weight: 400;
+}
+
+.the-berg-the-green .path-420 {
+  height: 16px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  width: 16px;
+}
+
+.the-berg-the-green .path-421 {
+  height: 16px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 98px;
+  width: 16px;
+}
+
+.the-berg-the-green .group-319 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 559px;
+  left: 140px;
+  position: absolute;
+  top: 1758px;
+  width: 372px;
+}
+
+.the-berg-the-green .overlap-116 {
+  border-radius: 16px 16px 0px 0px;
+  height: 302px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 372px;
+}
+
+.the-berg-the-green .rectangle-60 {
+  border-radius: 16px 16px 0px 0px;
+  height: 302px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 372px;
+}
+
+.the-berg-the-green .his-dolorem-habemus-35 {
+  color: #999999;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 83px;
+  left: 34px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 398px;
+  width: 310px;
+}
+
+.the-berg-the-green .group-320 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 559px;
+  left: 140px;
+  position: absolute;
+  top: 2966px;
+  width: 372px;
+}
+
+.the-berg-the-green .his-dolorem-habemus-36 {
+  color: #999999;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 83px;
+  left: 34px;
+  letter-spacing: 0;
+  line-height: 24px;
+  overflow: hidden;
+  position: absolute;
+  top: 398px;
+  width: 310px;
+}
+
+.the-berg-the-green .group-321 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 559px;
+  left: 549px;
+  position: absolute;
+  top: 1758px;
+  width: 372px;
+}
+
+.the-berg-the-green .group-322 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 559px;
+  left: 549px;
+  position: absolute;
+  top: 2966px;
+  width: 372px;
+}
+
+.the-berg-the-green .group-323 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 559px;
+  left: 958px;
+  position: absolute;
+  top: 1758px;
+  width: 372px;
+}
+
+.the-berg-the-green .group-324 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 559px;
+  left: 958px;
+  position: absolute;
+  top: 2966px;
+  width: 372px;
+}
+
+.the-berg-the-green .group-325 {
+  height: 394px;
+  left: 819px;
+  position: absolute;
+  top: 133px;
+  width: 415px;
+}
+
+.the-berg-the-green .group-326 {
+  background-image: url(../../../static/img/group-50-29.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 394px;
+  overflow: hidden;
+}
+
+.the-berg-the-green .overlap-group-62 {
+  height: 394px;
+  position: relative;
+  width: 415px;
+}
+
+.the-berg-the-green .group-327 {
+  background-image: url(../../../static/img/group-52-14.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 389px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 409px;
+}
+
+.the-berg-the-green .group-328 {
+  background-image: url(../../../static/img/group-54-14.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 394px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 415px;
+}
+
+.the-berg-the-green .toggle-menu-3 {
+  height: 56px;
+  left: 140px;
+  position: absolute;
+  top: 1059px;
+  width: 1190px;
+}
+
+.the-berg-the-green .overlap-group-63 {
+  height: 56px;
+  position: relative;
+}
+
+.the-berg-the-green .tab-rollover-15 {
+  height: 56px;
+  left: 339px;
+  position: absolute;
+  top: 0;
+  width: 172px;
+}
+
+.the-berg-the-green .overlap-117 {
+  height: 56px;
+  position: relative;
+  width: 174px;
+}
+
+.the-berg-the-green .group-329 {
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 174px;
+}
+
+.the-berg-the-green .rectangle-61 {
+  background-color: #005896;
+  border: 1px solid;
+  border-color: #bcbcbc;
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 172px;
+}
+
+.the-berg-the-green .text-wrapper-119 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 9px;
+  white-space: nowrap;
+  width: 174px;
+}
+
+.the-berg-the-green .rectangle-62 {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #bcbcbc;
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 172px;
+}
+
+.the-berg-the-green .text-wrapper-120 {
+  color: #667085;
+  font-family: "Poppins", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 8px;
+  white-space: nowrap;
+  width: 174px;
+}
+
+.the-berg-the-green .tab-rollover-16 {
+  height: 56px;
+  left: 170px;
+  position: absolute;
+  top: 0;
+  width: 172px;
+}
+
+.the-berg-the-green .tab-rollover-17 {
+  height: 56px;
+  left: 679px;
+  position: absolute;
+  top: 0;
+  width: 172px;
+}
+
+.the-berg-the-green .tab-rollover-18 {
+  height: 56px;
+  left: 509px;
+  position: absolute;
+  top: 0;
+  width: 172px;
+}
+
+.the-berg-the-green .tab-rollover-19 {
+  display: block;
+  height: 56px;
+  left: 848px;
+  position: absolute;
+  top: 0;
+  width: 172px;
+}
+
+.the-berg-the-green .tab-rollover-20 {
+  display: block;
+  height: 56px;
+  left: 1018px;
+  position: absolute;
+  top: 0;
+  width: 172px;
+}
+
+.the-berg-the-green .tab-rollover-21 {
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 172px;
+}
+
+.the-berg-the-green .rectangle-63 {
+  -webkit-backdrop-filter: blur(8.06px) brightness(69.61%);
+  backdrop-filter: blur(8.06px) brightness(69.61%);
+  height: 4175px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 1441px;
+}
+
+.the-berg-the-green .group-330 {
+  height: 1467px;
+  left: 438px;
+  position: absolute;
+  top: 340px;
+  width: 574px;
+}
+
+.the-berg-the-green .overlap-118 {
+  height: 1467px;
+  position: relative;
+}
+
+.the-berg-the-green .group-331 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 1467px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 565px;
+}
+
+.the-berg-the-green .future-of-customer-s-12 {
+  color: #333333;
+  font-family: "Poppins", Helvetica;
+  font-size: 31px;
+  font-weight: 600;
+  left: 61px;
+  letter-spacing: 0;
+  line-height: 56px;
+  position: absolute;
+  top: 694px;
+  white-space: nowrap;
+}
+
+.the-berg-the-green .overlap-group-64 {
+  border-radius: 16px 16px 0px 0px;
+  height: 643px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 565px;
+}
+
+.the-berg-the-green .rectangle-64 {
+  background-color: #005896;
+  border-radius: 16px 16px 0px 0px;
+  height: 643px;
+  left: 0;
+  opacity: 1.0;
+  position: absolute;
+  top: 0;
+  width: 565px;
+}
+
+.the-berg-the-green .rectangle-65 {
+  border-radius: 16px 16px 0px 0px;
+  height: 643px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 565px;
+}
+
+.the-berg-the-green .ainara-vergara-13 {
+  color: #333333;
+  font-family: "DM Sans", Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  left: 61px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 756px;
+  white-space: nowrap;
+}
+
+.the-berg-the-green .his-dolorem-habemus-37 {
+  color: #999999;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 566px;
+  left: 61px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 792px;
+  width: 441px;
+}
+
+.the-berg-the-green .group-332 {
+  height: 41px;
+  left: 0;
+  position: absolute;
+  top: 337px;
+  width: 574px;
+}
+
+.the-berg-the-green .group-333 {
+  height: 41px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 26px;
+}
+
+.the-berg-the-green .overlap-group-65 {
+  height: 42px;
+  position: relative;
+  top: -1px;
+}
+
+.the-berg-the-green .exclusion-11 {
+  height: 42px;
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 22px;
+}
+
+.the-berg-the-green .chev-down-6 {
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 9px;
+  transform: rotate(90deg);
+  width: 24px;
+}
+
+.the-berg-the-green .icon-28 {
+  height: 14px;
+  left: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 5px;
+  transform: rotate(-90deg);
+  width: 8px;
+}
+
+.the-berg-the-green .group-334 {
+  height: 41px;
+  left: 548px;
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  width: 26px;
+}
+
+.the-berg-the-green .exclusion-12 {
+  height: 42px;
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 22px;
+}
+
+.the-berg-the-green .icon-29 {
+  height: 14px;
+  left: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 5px;
+  transform: rotate(-270deg);
+  width: 8px;
+}
+
+.the-berg-the-green .light-button-primary-20 {
+  background-color: #fa612f;
+  border-radius: 15px;
+  display: block;
+  height: 48px;
+  left: 194px;
+  position: absolute;
+  top: 1374px;
+  width: 189px;
+}
+
+.the-berg-the-green .button-30 {
+  all: unset;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "DM Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 73px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.the-berg-the-green .group-335 {
+  background-color: #fa612f;
+  border-radius: 16px;
+  display: block;
+  height: 32px;
+  left: 514px;
+  position: absolute;
+  top: 28px;
+  width: 32px;
+}
+
+.the-berg-the-green .path-422 {
+  height: 16px;
+  left: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 8px;
+  width: 16px;
+}

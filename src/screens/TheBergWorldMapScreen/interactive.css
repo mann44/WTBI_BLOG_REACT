@@ -1,0 +1,85 @@
+/*
+ * Additional styles for the simplified interactive world map. These
+ * classes intentionally avoid conflicting with the existing style
+ * definitions by using the `interactive-` prefix. The map container
+ * centres its content and scales uniformly when the mapScale state
+ * changes. In maximised mode the entire screen is taken over.
+ */
+.interactive-world-map-screen {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fafafa;
+}
+
+.interactive-world-map-screen.maximized {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  overflow: auto;
+  background-color: #fafafa;
+  padding-top: 1rem;
+}
+
+.interactive-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.interactive-back {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 600;
+}
+
+.interactive-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.interactive-buttons button {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.interactive-buttons button:hover {
+  background-color: #f0f0f0;
+}
+
+.interactive-map-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.interactive-map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.interactive-pin {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: orange;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+}
+
+.interactive-counts {
+  margin-top: 1rem;
+}
+.interactive-counts p {
+  margin: 0.25rem 0;
+}
